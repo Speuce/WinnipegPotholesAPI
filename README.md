@@ -15,17 +15,11 @@ Note: '%20' means space character
     {
       "results":
       {
-        "task_date":"2021 Feb 28 12:00:00 AM",
-        "block_id":"8,682",
+        "date":"07/10/2021",
         "potholes":"6.9",
-        "street_name":"Cavalier Dr",
-        "from_street":"Hamilton Ave",
-        "to_street":"Hillary Cr",
-        "weight_in_kg":"171.29",
-        "weight_in_tonnes":"0.17",
-        "electoral_ward":"River Heights - Fort Garry",
+        "street":"Cavalier Dr",
         "neighbourhood":"Pembina Strip",
-        "location":"LINESTRING (-97.300484251164 49.891202741272, -97.300912640968 49.892591236442)"
+        "location":"-97.300484251164 49.891202741272"
       },
        "status":"OK"
     }
