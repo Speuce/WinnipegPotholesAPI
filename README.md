@@ -1,6 +1,6 @@
 
-# WinnipegPotholesAPI
-Winnipeg Potholes API
+# Winnipeg Potholes API
+This API returns a list of of completed pothole repairs within the City of Winnipeg, based on data from the [City of Winnipeg's Public Works Department](https://data.winnipeg.ca/Streets/Pothole-Repairs/4mat-mb3w). Using a simple GET request, repairs can be requested by street, neighbourhood, or date range.
 
 ## Endpoints
 
@@ -73,24 +73,22 @@ Each pothole repair specifies:
   
 **These are three sample requests for getting data from 3 endpoints**
 ```
-https://api.data-winnipeg.org/pothole-required-by-neighbourhood/json?neighbourhood_name=st%20vital
-https://api.data-winnipeg.org/pothole-repair-by-date-range/json?from_date=10/1/2020&to_date=10/1/2021
-https://api.data-winnipeg.org/pothole-repair-by-street/json?street_name=wellington%20st
+https://api.data-winnipeg.org/street/pothole-repairs/date-range/json?from_date=10-01-2020&to_date=10-01-2021
 ```
-Note: '%20' means space character
 
 
 ### Example Response
-```
+```json
     {
-      "results":
-      {
-        "date":"07-10-2021",
-        "potholes":"6.9",
-        "street":"Cavalier Dr",
-        "neighbourhood":"Pembina Strip",
-        "location":"-97.300484251164 49.891202741272"
-      },
-       "status":"OK"
+       "result":[
+        {
+          "date":"07-10-2021",
+          "potholes":"6.9",
+          "street":"Cavalier Dr",
+          "neighbourhood":"Pembina Strip",
+          "location":"-97.300484251164 49.891202741272"
+        },
+    ],
+    "status":"OK"
     }
 ```
