@@ -5,9 +5,12 @@ This API returns a list of of completed pothole repairs within the City of Winni
 Please note that although this API is **FREE**, we require attribution through a link to our repository.
 
 
-## Parameters 
+## Endpoints
+
+All API endpoints available for use at `https://api.data-winnipeg.org`.
 
 ### Pothole Repair by Neighbourhood 
+
 **neighbourhood_name**
 - Name of the the neighborhood. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi)
 - Type: String
