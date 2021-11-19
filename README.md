@@ -2,36 +2,6 @@
 # Winnipeg Potholes API
 This API returns a list of of completed pothole repairs within the City of Winnipeg, based on data from the [City of Winnipeg's Public Works Department](https://data.winnipeg.ca/Streets/Pothole-Repairs/4mat-mb3w). Using a simple GET request, repairs can be requested by street, neighbourhood, or date range.
 
-Please note that although this API is **FREE**, we require attribution through a link to our repository.
-
-
-## Endpoints
-
-All API endpoints available for use at `https://api.data-winnipeg.org`.
-
-### Pothole Repair by Neighbourhood 
-
-**neighbourhood_name**
-- Name of the the neighborhood. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi)
-- Type: String
-- Length Constraints: Minimum length of 1. Maximum length of 100
-- Required: Yes
-
-### Pothole Repair by Date Range 
-Searches for pothole repairs by neighbourhood name.  
-`/street/pothole-repairs/date-range`
-
-- `from_date`: Beginning date for pothole repairs (Inclusive) (DD-MM-YYYY)
-- `to_date`: End date for pothole repairs (Inclusive) (DD-MM-YYYY)
-
-### Pothole Repair by Street 
-**street_name**
-- Name of the the street
-- Type: String
-- Length Constraints: Minimum length of 1. Maximum length of 100
-- Required: Yes
-
-
 ## Endpoints
 
 The following is a list of Winnipeg Potholes' current endpoints.
@@ -41,6 +11,29 @@ The following is a list of Winnipeg Potholes' current endpoints.
 | Pothole Repair by Neighbourhood | /street/pothole-repairs/neighbourhood  | Searches for pothole repairs by neighbourhood name.             |
 | Pothole Repair by Date Range    | /street/pothole-repairs/date-range     | Searches for pothole repairs by the date range (from - to).     |
 | Pothole Repair by Street        | /street/pothole-repairs/street         | Search for pothole repairs by street name.                      |
+
+## Parameters 
+
+### Pothole Repair by Neighbourhood 
+Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi).  
+`/street/pothole-repairs/neighbourhood`
+
+- `neighbourhood`: Name of neighborhood. Spaces must be replaced with underscores '`_`'.
+
+
+### Pothole Repair by Date Range 
+Searches for pothole repairs by neighbourhood name.  
+`/street/pothole-repairs/date-range `
+
+- `from_date`: Beginning date for pothole repairs (Inclusive) (DD-MM-YYYY)
+- `to_date`: End date for pothole repairs (Inclusive) (DD-MM-YYYY)
+
+### Pothole Repair by Street 
+Searches for pothole repairs by street name.  
+`/street/pothole-repairs/street`
+
+- `street`: Name of street. Spaces must be replaced with underscores '`_`'.
+
 
 ## Resources
 This API will provide a list of potholes repairs that fit the specified parameters.
