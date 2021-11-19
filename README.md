@@ -16,7 +16,7 @@ Please note that although this API is **FREE**, we require attribution through a
 
 ### Pothole Repair by Date Range 
 Searches for pothole repairs by neighbourhood name.  
-`/street/pothole-repairs/neighbourhood`
+`/street/pothole-repairs/date-range`
 
 - `from_date`: Beginning date for pothole repairs (Inclusive) (DD-MM-YYYY)
 - `to_date`: End date for pothole repairs (Inclusive) (DD-MM-YYYY)
@@ -77,17 +77,14 @@ Each pothole repair specifies:
   
 **These are three sample requests for getting data from 3 endpoints**
 ```
-https://api.data-winnipeg.org/pothole-required-by-neighbourhood/json?neighbourhood_name=st%20vital
-https://api.data-winnipeg.org/pothole-repair-by-date-range/json?from_date=10/1/2020&to_date=10/1/2021
-https://api.data-winnipeg.org/pothole-repair-by-street/json?street_name=wellington%20st
+https://api.data-winnipeg.org/street/pothole-repairs/date-range/json?from_date=10-01-2020&to_date=10-01-2021
 ```
-Note: '%20' means space character
 
 
 ### Example Response
-```
+```json
     {
-      "results":
+       "result":[
       {
         "date":"07-10-2021",
         "potholes":"6.9",
@@ -95,6 +92,15 @@ Note: '%20' means space character
         "neighbourhood":"Pembina Strip",
         "location":"-97.300484251164 49.891202741272"
       },
+      {
+         "street":"McPhillips St",
+         "potholes":1.0,
+         "date":"12-11-2021",
+         "neighbourhood":"Old Kildonan",
+         "location":"-97.147539329009 49.953343390317"
+      }
+    ]
+
        "status":"OK"
     }
 ```
