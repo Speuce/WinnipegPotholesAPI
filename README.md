@@ -85,22 +85,14 @@ https://api.data-winnipeg.org/street/pothole-repairs/date-range/json?from_date=1
 ```json
     {
        "result":[
-      {
-        "date":"07-10-2021",
-        "potholes":"6.9",
-        "street":"Cavalier Dr",
-        "neighbourhood":"Pembina Strip",
-        "location":"-97.300484251164 49.891202741272"
-      },
-      {
-         "street":"McPhillips St",
-         "potholes":1.0,
-         "date":"12-11-2021",
-         "neighbourhood":"Old Kildonan",
-         "location":"-97.147539329009 49.953343390317"
-      }
-    ]
-
-       "status":"OK"
+        {
+          "date":"07-10-2021",
+          "potholes":"6.9",
+          "street":"Cavalier Dr",
+          "neighbourhood":"Pembina Strip",
+          "location":"-97.300484251164 49.891202741272"
+        },
+    ],
+    "status":"OK"
     }
 ```
