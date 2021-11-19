@@ -5,25 +5,24 @@ Winnipeg Potholes API
 ## Parameters 
 
 ### Pothole Repair by Neighbourhood 
-**neighbourhood_name**
-- Name of the the neighborhood. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi)
-- Type: String
-- Length Constraints: Minimum length of 1. Maximum length of 100
-- Required: Yes
+Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi).
+`/street/pothole-repairs/neighbourhood`
+
+- `neighbourhood_name`: Neighborhood name. Spaces must be replaced with underscores '`_`'.
+
 
 ### Pothole Repair by Date Range 
 Searches for pothole repairs by neighbourhood name.  
-`/street/pothole-repairs/neighbourhood`
+`/street/pothole-repairs/date-range `
 
 - `from_date`: Beginning date for pothole repairs (Inclusive) (DD-MM-YYYY)
 - `to_date`: End date for pothole repairs (Inclusive) (DD-MM-YYYY)
 
 ### Pothole Repair by Street 
-**street_name**
-- Name of the the street
-- Type: String
-- Length Constraints: Minimum length of 1. Maximum length of 100
-- Required: Yes
+Searches for pothole repairs by street name.
+`/street/pothole-repairs/neighbourhood`
+
+- `neighbourhood_name`: Street name. Spaces must be replaced with underscores '`_`'.
 
 
 ## Endpoints
