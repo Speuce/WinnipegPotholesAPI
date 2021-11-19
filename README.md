@@ -5,7 +5,7 @@ Winnipeg Potholes API
 ## Parameters 
 
 ### Pothole Repair by Neighbourhood 
-Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi).
+Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi).  
 `/street/pothole-repairs/neighbourhood`
 
 - `neighbourhood_name`: Neighborhood name. Spaces must be replaced with underscores '`_`'.
@@ -19,7 +19,7 @@ Searches for pothole repairs by neighbourhood name.
 - `to_date`: End date for pothole repairs (Inclusive) (DD-MM-YYYY)
 
 ### Pothole Repair by Street 
-Searches for pothole repairs by street name.
+Searches for pothole repairs by street name.  
 `/street/pothole-repairs/neighbourhood`
 
 - `neighbourhood_name`: Street name. Spaces must be replaced with underscores '`_`'.
