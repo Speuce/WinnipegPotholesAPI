@@ -12,7 +12,7 @@ Winnipeg Potholes API
 - Required: Yes
 
 ### Pothole Repair by Date Range 
-Searches for pothole repairs by neighbourhood name.
+Searches for pothole repairs by neighbourhood name.  
 `/street/pothole-repairs/neighbourhood`
 
 - `from_date`: Beginning date for pothole repairs (Inclusive) (DD-MM-YYYY)
