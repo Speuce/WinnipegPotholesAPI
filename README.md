@@ -31,6 +31,17 @@ Winnipeg Potholes API
 - Length Constraints: Minimum length of 1. Maximum length of 100
 - Required: Yes
 
+
+## Endpoints
+
+The following is a list of Winnipeg Potholes' current endpoints.
+
+| Name                            | Path                                   | Description                                                     |
+| ------------------------------- | -------------------------------------- | --------------------------------------------------------------- |
+| Pothole Repair by Neighbourhood | /street/pothole-repairs/neighbourhood  | Searches for pothole repairs by neighbourhood name.             |
+| Pothole Repair by Date Range    | /street/pothole-repairs/date-range     | Searches for pothole repairs by the date range (from - to).     |
+| Pothole Repair by Street        | /street/pothole-repairs/street         | Search for pothole repairs by street name.                      |
+
 ## Resources
 This API will provide a list of potholes repairs that fit the specified parameters.
 
