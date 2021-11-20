@@ -1,4 +1,3 @@
-
 # Winnipeg Potholes API
 This API returns a list of of completed pothole repairs within the City of Winnipeg, based on data from the [City of Winnipeg's Public Works Department](https://data.winnipeg.ca/Streets/Pothole-Repairs/4mat-mb3w). Using a simple GET request, repairs can be requested by street, neighbourhood, or date range.
 
@@ -14,7 +13,6 @@ Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods
 **Parameters:**  
 - `neighbourhood`: Name of neighborhood. Spaces must be replaced with underscores '`_`'.
 
-
 ### Pothole Repair by Date Range 
 
 `/street/pothole-repairs/date-range `  
@@ -29,10 +27,8 @@ Searches for pothole repairs by neighbourhood name.
 `/street/pothole-repairs/street`  
 Searches for pothole repairs by street name.  
 
-
 **Parameters:**  
 - `street`: Name of street. Spaces must be replaced with underscores '`_`'.
-
 
 ## Resources
 
@@ -45,14 +41,14 @@ Each pothole repair specifies:
   - `neighbourhood`: The neighbourhood that the potholes were in.
   - `location`: GPS coordinates of the exact location that the potholes were filled, using the format `latitude longitude`
 
-**Example**
+**Example Resource**
 ```json
 {
 	"street":"Pembina St.",
 	"potholes":7.0,
 	"date":"07-10-2021",
 	"neighbourhood":"St. Norbert",
-	"location":"-97.041896292122 49.893670090447"
+	"location":"-97.041896292122 49.893670090447",
 }
 ```
 
@@ -77,6 +73,5 @@ https://api.data-winnipeg.org/street/pothole-repairs/date-range/json?from_date=1
 			"location":"-97.300484251164 49.891202741272",
 		},
 	],
-	"status":"OK"
 }
 ```
