@@ -56,7 +56,7 @@ Each pothole repair specifies:
 ```
 
 
-### Sample Request  
+## Sample Request  
   
   
 **This is a sample request for getting data from one of the API's endpoints**
