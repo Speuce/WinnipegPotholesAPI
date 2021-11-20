@@ -59,7 +59,7 @@ Each pothole repair specifies:
 ### Sample Request  
   
   
-**These are three sample requests for getting data from 3 endpoints**
+**This is a sample request for getting data from one of the API's endpoints**
 ```
 https://api.data-winnipeg.org/street/pothole-repairs/date-range/json?from_date=10-01-2020&to_date=10-01-2021
 ```
