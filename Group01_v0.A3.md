@@ -8,6 +8,7 @@ The following is a list of the API's endpoints.
 ### Pothole Repair by Neighbourhood 
 
 **Path:** `api.data-winnipeg.org/street/pothole-repairs/neighbourhood`  
+  
 Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi).  
 
 **Parameters:**  
@@ -15,7 +16,8 @@ Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods
 
 ### Pothole Repair by Date Range
 
-**Path:** `api.data-winnipeg.org/street/pothole-repairs/date-range `  
+**Path:** `api.data-winnipeg.org/street/pothole-repairs/date-range`  
+  
 Searches for pothole repairs by neighbourhood name.  
 
 **Parameters:**  
@@ -25,6 +27,7 @@ Searches for pothole repairs by neighbourhood name.
 ### Pothole Repair by Street
 
 **Path:** `api.data-winnipeg.org/street/pothole-repairs/street`  
+  
 Searches for pothole repairs by street name.  
 
 **Parameters:**  
