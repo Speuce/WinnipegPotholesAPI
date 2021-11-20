@@ -7,24 +7,24 @@ The following is a list of the API's endpoints.
 
 ### Pothole Repair by Neighbourhood 
 
-`/street/pothole-repairs/neighbourhood`  
+**Path:** `api.data-winnipeg.org/street/pothole-repairs/neighbourhood`  
 Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods, refer to the [City of Winnipeg map](https://data.winnipeg.ca/City-Planning/Neighbourhood/fen6-iygi).  
 
 **Parameters:**  
 - `neighbourhood`: Name of neighborhood. Spaces must be replaced with underscores '`_`'.
 
-### Pothole Repair by Date Range 
+### Pothole Repair by Date Range
 
-`/street/pothole-repairs/date-range `  
+**Path:** `api.data-winnipeg.org/street/pothole-repairs/date-range `  
 Searches for pothole repairs by neighbourhood name.  
 
 **Parameters:**  
 - `from_date`: Beginning date for pothole repairs (Inclusive) (DD-MM-YYYY)
 - `to_date`: End date for pothole repairs (Inclusive) (DD-MM-YYYY)
 
-### Pothole Repair by Street 
+### Pothole Repair by Street
 
-`/street/pothole-repairs/street`  
+**Path:** `api.data-winnipeg.org/street/pothole-repairs/street`  
 Searches for pothole repairs by street name.  
 
 **Parameters:**  
@@ -67,7 +67,7 @@ https://api.data-winnipeg.org/street/pothole-repairs/date-range/json?from_date=1
 	"result":[
 		{
 			"date":"07-10-2021",
-			"potholes":"6.9",
+			"potholes":"6.0",
 			"street":"Cavalier Dr",
 			"neighbourhood":"Pembina Strip",
 			"location":"-97.300484251164 49.891202741272",
