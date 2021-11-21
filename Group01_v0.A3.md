@@ -35,7 +35,7 @@ Searches for pothole repairs by street name.
 
 ## Resources
 
-This API will provide a list of potholes repairs that fit the specified parameters.
+This API will provide a list of pothole repairs that fit the specified parameters.
 
 Each pothole repair specifies:
   - `street`: The street whose potholes were filled.
