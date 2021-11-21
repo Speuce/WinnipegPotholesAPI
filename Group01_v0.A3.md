@@ -3,7 +3,7 @@ This API returns a list of of completed pothole repairs within the City of Winni
 
 ## Endpoints
 
-The following is a list of the API's endpoints.
+The following are endpoints accessible through this API.
 
 ### Pothole Repair by Neighbourhood 
 
@@ -40,7 +40,7 @@ This API will provide a list of pothole repairs that fit the specified parameter
 Each pothole repair specifies:
   - `street`: The street whose potholes were filled.
   - `potholes`: The number of potholes that were filled.
-  - `date`: The day that the potholes were filled on (DD-MM-YYYY).
+  - `date`: The day that the potholes were filled in (DD-MM-YYYY).
   - `neighbourhood`: The neighbourhood that the potholes were in.
   - `location`: GPS coordinates of the exact location that the potholes were filled, using the format `latitude longitude`
 
