@@ -18,7 +18,7 @@ Searches for pothole repairs by neighbourhood name. For a list of neighbourhoods
 
 **Path:** `api.data-winnipeg.org/street/pothole-repairs/date-range`  
   
-Searches for pothole repairs by neighbourhood name.  
+Searches for pothole repairs by date range.  
 
 **Parameters:**  
 - `from_date`: Beginning date for pothole repairs (Inclusive) (DD-MM-YYYY)
